@@ -1,6 +1,6 @@
 clear
 
-tput setaf 46
+tput setaf 39
 
 typearr=("We're careful about orange ping pong balls because people might think they're fruit.
 " "He used to get confused between soldiers and shoulders, but as a military man, he now soldiers responsibility.
@@ -12,14 +12,14 @@ start=$SECONDS
 
 read -p "$type"$'\n' typed
 
-tput setaf 226
-
 if [[ "$typed" == "$type" ]];
 then
+  tput setaf 46
   echo "Good job!"
   echo $(( SECONDS - start ))
   sleep 2
 else
+  tput setaf 9
   echo "Wrong. Try again next time!"
   echo $(( SECONDS - start ))
   sleep 2

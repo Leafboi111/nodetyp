@@ -4,3 +4,4 @@ typearr=(" We're careful about orange ping pong balls because people might think
 
 type=${typearr[$rand]}
 echo $type
+sleep 5

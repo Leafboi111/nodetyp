@@ -5,7 +5,7 @@ typearr=(" We're careful about orange ping pong balls because people might think
 " "The sky is clear; the stars are twinkling." "25 years later, she still regretted that specific moment." "I cheated while playing the darts tournament by using a longbow.")
 
 type=$(printf "%s\n" "${typearr[@]}" | shuf -n1)
-read -p "$type" typed
+read -p "$type\n" typed
 
 if [[ "$typed" == "$type" ]];
 then

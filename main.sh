@@ -19,7 +19,7 @@ then
   echo $(( SECONDS - start ))
   sleep 2
 else
-  tput setaf 9
+  tput setaf 196
   echo "Wrong. Try again next time!"
   echo $(( SECONDS - start ))
   sleep 2

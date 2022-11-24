@@ -17,10 +17,12 @@ then
   tput setaf 46
   echo "Good job!"
   echo $(( SECONDS - start ))
+  echo "Press enter to quit: "
   read delay
 else
   tput setaf 196
   echo "Wrong. Try again next time!"
   echo $(( SECONDS - start ))
+  echo "Press enter to quit: "
   read delay
 fi

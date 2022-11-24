@@ -14,9 +14,9 @@ if [[ "$typed" == "$type" ]];
 then
   echo "Good job!"
   echo $(( SECONDS - start ))
-  sleep 1
+  sleep 2
 else
   echo "Wrong. Try again next time!"
   echo $(( SECONDS - start ))
-  sleep 1
+  sleep 2
 fi

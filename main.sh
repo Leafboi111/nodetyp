@@ -17,6 +17,6 @@ then
   sleep 1
 else
   echo "Wrong. Try again next time!"
-  printf "%s\r" $(TZ=UTC date --date now-$now %M:%S.%N)
+  printf "%s\r" $(TZ=UTC date --date now-$now %H:%M:%S.%N)
   sleep 1
 fi

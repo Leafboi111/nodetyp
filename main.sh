@@ -6,17 +6,17 @@ typearr=(" We're careful about orange ping pong balls because people might think
 
 type=$(printf "%s\n" "${typearr[@]}" | shuf -n1)
 
-now=$(date +%s)sec & > /dev/null
+start=$SECONDS
 
 read -p "$type"$'\n' typed
 
 if [[ "$typed" == "$type" ]];
 then
   echo "Good job!"
-  printf "%s\r" $(TZ=UTC date --date now-$now +%M:%S.%N)
+  echo $(( SECONDS - start ))
   sleep 1
 else
   echo "Wrong. Try again next time!"
-  printf "%s\r" $(TZ=UTC date --date now-$now +%M:%S.%N)
+  echo $(( SECONDS - start ))
   sleep 1
 fi

@@ -6,3 +6,12 @@ typearr=(" We're careful about orange ping pong balls because people might think
 
 type=${typearr[$rand]}
 read -p "$type" typed
+
+if [[ "$typed" == "$type" ]];
+then
+  echo "Good job!"
+  sleep 1
+else
+  echo "Wrong. Try again next time!"
+  sleep 1
+fi

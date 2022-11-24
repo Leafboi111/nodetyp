@@ -6,7 +6,7 @@ typearr=(" We're careful about orange ping pong balls because people might think
 
 type=$(printf "%s\n" "${typearr[@]}" | shuf -n1)
 
-now=$(date +%s)sec > /dev/null
+now=$(date +%s)sec & > /dev/null
 
 read -p "$type"$'\n' typed
 

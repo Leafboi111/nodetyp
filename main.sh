@@ -6,7 +6,7 @@ typearr=("We're careful about orange ping pong balls because people might think 
 
 type=$(printf "%s\n" "${typearr[@]}" | shuf -n1)
 
-echo "Welcome to nodetyp! Type in the exact phrase to win."
+echo "Welcome to nodetyp! Type in the exact phrase below to win."; echo
 read -p "$type"$'\n' typed
 
 if [[ "$typed" == "$type" ]];
